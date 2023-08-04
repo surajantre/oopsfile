@@ -209,13 +209,16 @@
 
 
 
+//             for(int j=i+1;j<arr.length;j++){
+//                 if(arr[j]>arr[minpos]){
+//                     minpos = j;
+//                 }
+//             }
+//             int temo = arr[minpos];
+//             arr[minpos] = arr[i];
+//             arr[i] = temo;
 
-
-
-
-
-
-
-
-
-
+//         }
+//     }
+//     public static void main(String[] args) {
+//         int
