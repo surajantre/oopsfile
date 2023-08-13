@@ -1,4 +1,4 @@
-                                         // CLASS AND OBJECT 
+                                // CLASS AND OBJECT 
 // class pen {
 //     String colour;
 //     String type;//bollpoint; gel
@@ -11,9 +11,7 @@
 //     System.out.println(this.colour);
 //     }
 // }
-
-
-// public class oops{
+// public class oops{   
 //     public static void main(String args[]){
 //         pen pen1 = new pen();
 //         pen1.colour = "blue";
@@ -61,7 +59,7 @@
 
 
 
-                                                                             // POLYMORPHISAM
+                                                 // POLYMORPHISAM
 
                              
 // class Student {
@@ -105,192 +103,117 @@
 
 
 
-/*class shape{
-    public void area(){
-        System.out.println("disply area");
+// class shape{
+//     public void area(){
+//         System.out.println("disply area");
 
-    }
-}
-class Triangle extends shape {
-    public void area(int l, int h){
-        System.out.println(1/2*l*h);
+//     }
+// }
+// class Triangle extends shape {
+//     public void area(int l, int h){
+//         System.out.println(1/2*l*h);
 
-    }
+//     }
 
-}
-
-class EquilateralTriangle extends Triangle {
-    public void area (int l,int h){
-        System.out.println(1/2*l*h);
-    }
-}
-
-
-class Circle extends shape{
-    public void area (int r){
-        System.out.println(1/2*r*r);
-    }
-
-}
-
-public class oops{
-
-    public static void main(String[] args){
-
-    }
-}                                        */
-
-
-
-
-
-//                                                                              Encapsulation - packages     acces modifayer - public,protected,privet,defoult 
-//                                                                                                                               they aree four access modifayer
-
-
-
-
-
-// PACKAGE INFO
-
-
-// package bank;
-
-// class Account {
-//     public String name;
-//     protected String email;
-//     private String password;
-
-
-//     // getters & setter method
-
-
-// public String getPassword(){
-//     return this.password;
 // }
 
-//  /*private (for dony set password for user)*/public  void setPassword(String pass){
-//     this.password = pass;
-// }
-// }
-
-
-// public class bank {
-//     public static void main(String args[]){
-//         Account account1 = new Account();
-//         account1.name= "Apna College";
-//         account1.email="apna college@gmail.com";
-//         account1.setPassword("abcd") ;
-//         System.out.println(account1.getPassword());
-
+// class EquilateralTriangle extends Triangle {
+//     public void area (int l,int h){
+//         System.out.println(1/2*l*h);
 //     }
 // }
 
 
-
-
-
-
-
-
-
-//                                                                                       ABSTRACTION
-
-
-
-
-
-// abstract class Animal{
-//     abstract void walk();
-//   /*animal are a constreacter */  Animal() {
-//         System.out.println("you are created a new Animal");
+// class Circle extends shape{
+//     public void area (int r){
+//         System.out.println(1/2*r*r);
 //     }
-// }
 
-// class Horse extends Animal{
-//     /* Hourse are a constracter of House class*/ Horse(){
-//         System.out.println("Created a Horse");
-//     }
-//     public void walk() {
-//         System.out.println("walks on 4 legs");
-
-//     }
-// }
-
-// class chicken extends Animal{
-//     public void walk(){
-//         System.out.println("walks on 2 legs");
-//     }
-// }
-// public class oops{
-//     public static void main(String args[]){
-//         Horse horse = new Horse();
-//        /*  horse.walk();
-//         chicken c1=new chicken();
-//         c1.walk();*/
-         
-//     }
-// }
-
-
-
-
-
-
-
-
-
-   //                                                                       Interfaces
-
-
-
-//    interface Animal{
-//     int eyes = 2;
-//     void walk();
-
-//    }
-// interface Herbivore{
-
-//    }
-//    class Horse implements Animal,Herbivore{
-//     public void walk() {
-//         System.out.println("walk on 4 legs");
-//     }
-//    }
-
-//    public class oops{
-//     public static void main(String args[]){
-//         Horse horse = new Horse();
-//         horse.walk();
-//     }
-//    }
-
-
-
-
-
-
-//                                      static keyword- commen
-
-
-
-// class Student {
-//     String name ;
-//     static String school;
-
-//     public static void changeSchool(){
-//         school = "newsschool";
-
-//     }
 // }
 
 // public class oops{
-//     public static void main (String args[]){
-//         Student.school="ABC";
-//         Student student1 = new Student();
-//         student1.name="suraj";
-//         System.out.println(student1.school);
+
+//     public static void main(String[] args){
 
 //     }
+// }                                        
+
+
+
+
+
+
+
+
+
+
+
+//                                                      INCPSULATION CODE
+ 
+
+
+
+
+
+
+// public class oops{
+
+//     public static void selection(int arr[]){
+//         for(int i=0;i<arr.length-1;i++){
+//             int minPos= i;
+
+//             for(int j=i+1;j<arr.length;j++) {
+//                 if(arr [minPos] < arr[j]){
+//                     minPos = j;
+//                 }
+
+//             }
+//             int temp = arr  [minPos];
+//             arr [minPos] = arr [i];
+//             arr[i] = temp;
 // }
+//     }
+//     public static void main (String[] args) {
+//         int arr[]={1,3,5,7,9,2};
+//         selection(arr);
+        
+//     }
+
+// }
+
+
+
+
+// public class oops{
+//     public static void selectionSort(int arr[]){
+//         for(int i=0;i<arr.length-1;i++){
+//             int minpos = i;
+
+
+//             for(int j=i+1;j<arr.length;j++){
+//                 if(arr[j]>arr[minpos]){
+//                     minpos = j;
+//                 }
+//             }
+//             int temo = arr[minpos];
+//             arr[minpos] = arr[i];
+//             arr[i] = temo;
+
+//         }
+//     }
+//     public static void main(String[] args) {
+//         int arr[]={1,3,5,7,9,2};
+//         selectionSort(arr);
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
 
